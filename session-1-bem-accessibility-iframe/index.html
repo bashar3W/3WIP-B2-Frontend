@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>3WIP-2</title>
+  </head>
+  <body>
+    <!-- ================ Accessibility ================ -->
+    <!-- https://www.octobot.io/blog/html-accessibility/ -->
+    <img
+      src="cute-dog.jpg"
+      alt="a small, brown sitting in a field of dandelions with a chew toy in its mouth"
+    />
+
+    <html lang="en/bn/es">
+      <!-- the rest of the page content, in English -->
+    </html>
+
+    <div role="navigation/alert">
+      <ul>
+        <li>Product</li>
+        <li>Solutions</li>
+        <li>About Us</li>
+        <li>Blog</li>
+      </ul>
+    </div>
+
+    <!-- ================ BEM ================ -->
+    <div class="header">
+      <h2 class="header__title">
+        Logo <span class="header__title--red">text</span>
+      </h2>
+    </div>
+
+    <div class="card">
+      <div class="cardImg">
+        <img class="cardImg__image" src="" alt="Card Image" />
+      </div>
+      <h2 class="card__title">
+        Title <span class="card__title--green">Green</span>
+      </h2>
+      <div class="list">
+        <li class="list__one">List one</li>
+        <li class="list__two">List <span class="list__two--red">two</span></li>
+        <li class="list__three">List three</li>
+        <li class="list__four">List four</li>
+      </div>
+    </div>
+    <br /><br />
+
+    <!-- ================ iFrame ================ -->
+    <iframe src="./menu.html" width="555" height="100"></iframe>
+    <br /><br />
+    <iframe
+      src="https://example.org"
+      width="300"
+      height="200"
+      name="iframe_a"
+    ></iframe>
+    <a
+      href="https://www.openstreetmap.org/export/embed.html?bbox=-0.004017949104309083%2C51.47612752641776%2C0.00030577182769775396%2C51.478569861898606&layer=mapnik"
+      target="iframe_a"
+      >Map</a
+    >
+  </body>
+</html>
