@@ -1,0 +1,14 @@
+.rectangle {
+  background-color: green;
+  width: 600px;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .circle {
+    background-color: red;
+    width: 150px;
+    height: 150px;
+    border-radius: 100%;
+  }
+}
