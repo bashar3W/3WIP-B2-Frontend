@@ -1,0 +1,93 @@
+/*=============================================
+=            FOUNDATIONS - mixins             =
+=============================================*/
+
+/*=============================================
+=            Responisve                       =
+=============================================*/
+
+@mixin mobile {
+  @media screen and (max-width: map-get($breakpoints, "mobile")) {
+    @content;
+  }
+}
+@mixin mediumMobile {
+  @media screen and (max-width: map-get($breakpoints, "mediumMobile")) {
+    @content;
+  }
+}
+@mixin largeMobile {
+  @media screen and (max-width: map-get($breakpoints, "largeMobile")) {
+    @content;
+  }
+}
+@mixin miniPortraitTablet {
+  @media screen and (max-width: map-get($breakpoints, "miniPortraitTablet")) {
+    @content;
+  }
+}
+@mixin portraitTablet {
+  @media screen and (max-width: map-get($breakpoints, "portraitTablet")) {
+    @content;
+  }
+}
+@mixin tablet {
+  @media screen and (max-width: map-get($breakpoints, "tablet")) {
+    @content;
+  }
+}
+@mixin mediumTablet {
+  @media screen and (max-width: map-get($breakpoints, "mediumTablet")) {
+    @content;
+  }
+}
+@mixin largeTablet {
+  @media screen and (max-width: map-get($breakpoints, "largeTablet")) {
+    @content;
+  }
+}
+@mixin extraLargeTablet {
+  @media screen and (max-width: map-get($breakpoints, "extraLargeTablet")) {
+    @content;
+  }
+}
+@mixin smallDesktop {
+  @media screen and (max-width: map-get($breakpoints, "smallDesktop")) {
+    @content;
+  }
+}
+@mixin semiLargeDesktop {
+  @media screen and (max-width: map-get($breakpoints, "semiLargeDesktop")) {
+    @content;
+  }
+}
+@mixin desktop {
+  @media screen and (max-width: map-get($breakpoints, "desktop")) {
+    @content;
+  }
+}
+@mixin mediumDesktop {
+  @media screen and (max-width: map-get($breakpoints, "mediumDesktop")) {
+    @content;
+  }
+}
+@mixin extraLargeDesktop {
+  @media screen and (max-width: map-get($breakpoints, "extraLargeDesktop")) {
+    @content;
+  }
+}
+@mixin smallFourKDevice {
+  @media screen and (max-width: map-get($breakpoints, "smallFourKDevice")) {
+    @content;
+  }
+}
+@mixin mediumFourKDevice {
+  @media screen and (max-width: map-get($breakpoints, "mediumFourKDevice")) {
+    @content;
+  }
+}
+@mixin fourKDevice {
+  @media screen and (max-width: map-get($breakpoints, "fourKDevice")) {
+    @content;
+  }
+}
