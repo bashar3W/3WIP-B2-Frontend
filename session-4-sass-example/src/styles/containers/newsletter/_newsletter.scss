@@ -1,0 +1,37 @@
+.newsletter {
+  margin: 128px auto 178px;
+  @include tablet {
+    margin: 100px auto 100px auto;
+  }
+  .newsletter__container {
+    text-align: center;
+    .newsletter__title {
+      font-family: "Roboto";
+      font-style: normal;
+      font-weight: 600;
+      font-size: 24px;
+      line-height: 28px;
+      text-align: center;
+      color: #344767;
+      @include fourKDevice {
+        font-size: 20px;
+      }
+    }
+    .newsletter__email-input {
+      font-family: "Roboto";
+      font-size: 14px;
+      background: #ffffff;
+      border: 1px solid #c7ccd0;
+      border-radius: 8px;
+      width: 30%;
+      margin-top: 20px;
+      padding: 10px 0 25px 10px;
+      @include tablet {
+        width: 70%;
+      }
+      @include largeMobile {
+        width: 85%;
+      }
+    }
+  }
+}

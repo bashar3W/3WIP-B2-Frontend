@@ -1,0 +1,169 @@
+.footer {
+  // background: #eaeeef;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  .container__top {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 60px;
+    @include tablet {
+      display: inherit !important;
+    }
+    .top__important-links-container {
+      width: 75%;
+      display: flex;
+      justify-content: space-between;
+      @include tablet {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+      }
+      @include largeMobile {
+        width: 100%;
+        display: inherit !important;
+      }
+    }
+    .top__contact-us {
+      width: 25%;
+      text-align: right;
+      @include tablet {
+        width: 100%;
+        text-align: left;
+      }
+      .contact-us__body {
+        .body__phone-number {
+          font-family: $fm-open-sans-bold;
+          font-style: normal;
+          font-weight: 400;
+          font-size: 18px;
+          line-height: 24px;
+          text-align: right;
+          color: #212b36;
+          margin-bottom: 30px;
+          @include fourKDevice {
+            font-size: 15px;
+            margin-bottom: 20px;
+          }
+          @include tablet {
+            text-align: left;
+          }
+        }
+        .body__date {
+          font-family: $fm-open-sans-bold;
+          font-style: normal;
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 24px;
+          color: #637381;
+          margin-bottom: 16px;
+          @include fourKDevice {
+            font-size: 14px;
+            margin-bottom: 10px;
+          }
+        }
+        .body__social-links {
+          margin-top: 30px;
+          .social-link__icon {
+            font-size: 25px;
+            margin-left: 35px;
+            &:hover {
+              color: #3056d3;
+            }
+            @include tablet {
+              margin-left: 0px;
+              margin-right: 35px;
+            }
+          }
+        }
+      }
+    }
+  }
+  .container__bottom {
+    display: flex;
+    justify-content: space-between;
+    font-family: $fm-open-sans-bold;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #637381;
+    @include fourKDevice {
+      font-size: 14px;
+    }
+    @include tablet {
+      flex-direction: column-reverse;
+      align-items: center;
+    }
+    .bottom__copyright {
+      .copyright {
+        @include tablet {
+          margin-top: 15px;
+          text-align: center;
+        }
+      }
+    }
+    .bottom__accepted-payment-methods {
+      .accepted-payment-method__text {
+        margin-right: 40px;
+        display: inline;
+        @include largeMobile {
+          margin-right: 5px;
+        }
+      }
+      .accepted-payment-method__image {
+        width: 400px;
+        @include largeMobile {
+          width: 270px;
+        }
+      }
+    }
+  }
+
+  // for all titles of the footer
+  .title {
+    font-family: "Prata";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 26px;
+    color: #212b36;
+    margin: 40px auto;
+    @include fourKDevice {
+      margin: 20px auto;
+      font-size: 18px;
+    }
+  }
+
+  .text-white {
+    color: white !important;
+  }
+
+  .list-white {
+    color: white !important;
+    &:hover {
+      color: #3056d3 !important;
+    }
+  }
+
+  // for all the links of the footer
+  .body__links {
+    .links__link {
+      font-family: $fm-open-sans-bold;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 24px;
+      color: #637381;
+      margin-bottom: 16px;
+      display: block;
+      cursor: pointer;
+      @include fourKDevice {
+        font-size: 14px;
+        margin-bottom: 10px;
+      }
+      &:hover {
+        color: #3056d3;
+      }
+    }
+  }
+}

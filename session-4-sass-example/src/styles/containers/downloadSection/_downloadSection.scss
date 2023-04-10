@@ -1,0 +1,145 @@
+.downloadSection {
+  .downloadSection-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 195px;
+    padding: 54px 0;
+    .downloadSection__textArea {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      .title {
+        font-family: "Open Sans";
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 41px;
+        color: #323f73;
+        @include semiLargeDesktop {
+          font-size: 24px;
+        }
+        @include tablet {
+          font-size: 20px;
+        }
+      }
+      .description {
+        font-family: "Open Sans";
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 36px;
+        color: #000000;
+        margin: 24px 0;
+        @include semiLargeDesktop {
+          font-size: 20px;
+          margin: 16px 0;
+          line-height: 26px;
+        }
+        @include tablet {
+          font-size: 16px;
+          margin: 5px 0;
+        }
+      }
+      .downloadSection__textArea--inputArea {
+        position: relative;
+        display: flex;
+        .inputField {
+          padding: 20px 0 20px 60px;
+          width: 454px;
+          font-family: "Poppins";
+          font-weight: 500;
+          font-size: 14px;
+          line-height: 14px;
+          @include fourKDevice {
+            width: 200px;
+          }
+          @include portraitTablet {
+            width: 100%;
+            padding: 12px 10px;
+          }
+        }
+        .icon {
+          position: absolute;
+          top: 40%;
+          left: 30px;
+          @include portraitTablet {
+            display: none;
+          }
+        }
+        .downloadBtn {
+          width: 150px;
+          font-family: $fm-open-sans-bold;
+          font-style: normal;
+          font-weight: $fw-bold;
+          font-size: 14px;
+          line-height: 22px;
+          text-align: center;
+          text-transform: uppercase;
+          padding: 20px 40px;
+          color: $text-white;
+          background: linear-gradient(90deg, #55acce 0%, #acdb93 100%);
+          box-shadow: 0px 2px 6px rgba(40, 129, 235, 0.36);
+          transition: all 1000ms;
+          cursor: pointer;
+          transition: all 1000ms;
+          &:hover {
+            background: linear-gradient(180deg, #acdb93 100%, #55acce 0%);
+            box-shadow: 0px 2px 6px rgba(40, 129, 235, 0.6);
+          }
+          @include fourKDevice {
+            width: 120px;
+            font-size: 10px;
+            display: flex;
+            align-items: center;
+            padding: 10px 20px;
+            justify-content: center;
+          }
+          @include portraitTablet {
+            width: auto;
+            padding: 5px 10px;
+            line-height: 16px;
+            white-space: nowrap;
+          }
+        }
+      }
+      .pera {
+        font-family: "Poppins";
+        font-size: 18px;
+        margin-top: 37px;
+        line-height: 28px;
+        color: #acdb93;
+        @include fourKDevice {
+          font-size: 15px;
+          margin-top: 20px;
+          line-height: 20px;
+        }
+        @include semiLargeDesktop {
+          font-size: 12px;
+          margin-top: 20px;
+          line-height: 20px;
+        }
+        @include tablet {
+          font-size: 14px;
+        }
+      }
+    }
+    .downloadSection__imgArea {
+      .downloadSection__imgArea--img {
+        width: 100%;
+      }
+    }
+    @include fourKDevice {
+      gap: 120px;
+    }
+    @include mediumDesktop {
+      gap: 80px;
+    }
+    @include desktop {
+      gap: 40px;
+    }
+    @include mediumTablet {
+      grid-template-columns: repeat(1, 1fr);
+    }
+    @include tablet {
+      padding: 30px 0;
+    }
+  }
+}

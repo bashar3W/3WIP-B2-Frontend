@@ -1,0 +1,13 @@
+/* Default css variabls */
+
+:root {
+  --bbb-body-text-color: #{$black};
+  --bbb-white-text-color: #{$white};
+  --bbb-primary-text-color: #{$green};
+  --bbb-blue-text-color: #{$blue};
+
+  --bbb-body-bg-color: #{$white};
+  --bbb-white-bg-color: #{$white};
+
+  --bbb-body-font-family: #{$fm-open-sans-bold};
+}

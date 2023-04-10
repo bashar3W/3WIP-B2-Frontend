@@ -1,0 +1,10 @@
+.bbb-container {
+  max-width: 1280px;
+  width: 95%;
+  margin: auto;
+  z-index: 1;
+
+  @include fourKDevice {
+    width: 95%;
+  }
+}

@@ -1,0 +1,155 @@
+.becomeAMember-section {
+  background: linear-gradient(
+    359.59deg,
+    rgba(172, 219, 147, 0.6) 83.87%,
+    rgba(172, 219, 147, 0) 96.26%
+  );
+  border-radius: 12px;
+  padding: 215px 0 123px;
+  .becomeAMember {
+    .becomeAMember__heading {
+      .becomeAMember__heading--heading {
+        font-family: "Open Sans";
+        font-weight: 700;
+        font-size: 30px;
+        // line-height: 64px;
+        margin-bottom: 26px;
+        text-align: center;
+        color: #282938;
+        @include fourKDevice {
+          font-size: 26px;
+          line-height: 40px;
+        }
+        @include mediumTablet {
+          font-size: 20px;
+          line-height: 34px;
+        }
+      }
+      .becomeAMember__heading--pera {
+        font-family: $fm-open-sans-bold;
+        font-size: 20px;
+        line-height: 28px;
+        text-align: center;
+        color: #282938;
+        font-weight: 400;
+        // margin-top: 26px;
+        @include fourKDevice {
+          font-size: 16px;
+          line-height: 24px;
+          margin-top: 16px;
+        }
+        @include mediumTablet {
+          font-size: 12px;
+        }
+      }
+    }
+    .becomeAMember__body {
+      // display: flex;
+      // flex-direction: row;
+      gap: 52px;
+      margin-top: 76px;
+      // align-items: center;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      .textArea {
+        // width: 50%;
+        .textArea--heading {
+          font-family: "Open Sans";
+          font-weight: 700;
+          font-size: 24px;
+          line-height: 33px;
+          color: #000000;
+          @include fourKDevice {
+            font-size: 20px;
+            line-height: 30px;
+          }
+          @include mediumTablet {
+            font-size: 18px;
+          }
+          @include largeTablet {
+            font-size: 16px;
+          }
+        }
+        .textArea--para1 {
+          font-family: "Open Sans";
+          font-size: 18px;
+          line-height: 28px;
+          color: #000000;
+          margin-top: 27px;
+          @include fourKDevice {
+            font-size: 16px;
+            line-height: 24px;
+          }
+          @include largeTablet {
+            font-size: 14px;
+          }
+        }
+        .textArea--para2 {
+          font-family: $fm-open-sans-bold;
+          font-size: 18px;
+          line-height: 28px;
+          color: #000000;
+          margin-top: 27px;
+          @include fourKDevice {
+            font-size: 16px;
+            line-height: 24px;
+          }
+          @include largeTablet {
+            font-size: 14px;
+          }
+        }
+        .becomeAMember-btn {
+          font-family: $fm-open-sans-bold;
+          background: #55acce;
+          border-radius: 8px;
+          padding: 18px 40px;
+          width: 245px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          color: #fff;
+          margin-top: 41px;
+          transition: all 1000ms;
+          &:hover {
+            background: linear-gradient(180deg, #acdb93 100%, #55acce 0%);
+            box-shadow: 0px 2px 6px rgba(40, 129, 235, 0.6);
+          }
+          @include fourKDevice {
+            width: 160px;
+          }
+        }
+        @include largeTablet {
+          width: 100%;
+          order: 2;
+        }
+      }
+      .imgArea {
+        // width: 50%;
+        .imgArea--img {
+          width: 810px;
+          border-radius: 15px;
+          @include fourKDevice {
+            width: 100% !important;
+            height: 100% !important;
+          }
+          @include mediumFourKDevice {
+            width: 100% !important;
+            height: 100% !important;
+          }
+        }
+      }
+      @include largeTablet {
+        // flex-direction: column-reverse;
+        margin-top: 30px;
+        // gap: 28px;
+        grid-template-columns: repeat(1, 1fr);
+      }
+    }
+  }
+  @include fourKDevice {
+    padding: 80px 0 40px;
+  }
+  @include largeTablet {
+    padding: 50px 0 40px;
+  }
+}

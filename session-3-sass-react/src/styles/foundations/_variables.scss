@@ -1,0 +1,140 @@
+/*=============================================
+=            VARIABLES                        =
+=============================================*/
+
+/**
+ * TABLE OF CONTENTS
+ * 
+ * COLORS
+ * Brand colors.......................These are the main brand colors. They will be used the most.
+ * Neutral colors ....................White and black, gray.
+ * Utility colors..................... Other colors to represent states: info, warning, success.
+ *
+ * TYPOGRAPHY
+ * Font Families.....................The fonts used in the design system.
+ * Font Weights..................... Font weights.
+ * Font Sizes............................ Font sizing for body text, paragraph, inputs
+ * 
+ * BREAKPOINTS
+ * Breakpoints ......................Global responsive breakpoints definitions.
+ * 
+ * SHADOW
+ * Shadow ...........................global fixed set of shadow variables
+ * 
+ */
+
+/*=============================================
+=            COLORS                           =
+=============================================*/
+
+/* Brand colors */
+$red: red;
+$green: green;
+$pink: pink;
+$yellow: yellow;
+$blue: #3056d3;
+
+/* Neutral colors */
+
+$white: #ffffff;
+$black: #000;
+$gray: gray;
+
+/* Utilify colors */
+
+$green: green;
+$error: red;
+$warning: yellow;
+
+/* background color */
+$bg-black: #000;
+$bg-white: #fff;
+$bg-green-light: #acdb93;
+$bg-white-gradient: linear-gradient(
+  90.72deg,
+  #ffffff 49.82%,
+  #ffffff 49.82%,
+  rgba(255, 255, 255, 0) 57.72%
+);
+$bg-green-gradient: linear-gradient(
+  359.59deg,
+  rgba(172, 219, 147, 0.6) 83.87%,
+  rgba(172, 219, 147, 0) 96.26%
+);
+$bg-lime: #acdb93;
+$bg-blue-light: #55acce;
+$bg-lime-gradient: rgba(85, 172, 206, 0.2);
+$bg-blue-green-gradient: linear-gradient(90deg, #55acce 0%, #acdb93 100%);
+
+/* text color */
+$text-grey: #7b809a;
+$text-white: #fff;
+$text-blue: #3056d3;
+$text-green: #acdb93;
+
+/*=====  End of colors  ======*/
+
+/*=============================================
+=            TYPOGRAPHY                      =
+=============================================*/
+
+/* Font Color */
+
+$text-color: #000;
+
+/* Font Family */
+
+// $fm-roboto-bold: "Roboto" sans-serif;
+// $fm-roboto-regular: "Roboto" sans-serif;
+// $fm-roboto-medium: "Roboto" sans-serif;
+$fm-open-sans-bold: "Open Sans", sans-serif;
+
+/* Font Weight */
+
+$fw-normal: 400;
+$fw-bold: 700;
+$fw-black: 900;
+
+/* Font Sizes */
+
+$fs-normal: 18px;
+$fs-large: 24px;
+
+/*=====  End of typography  ======*/
+
+/*=============================================
+=            Border                      =
+=============================================*/
+/* border */
+$border-1: 1px solid #c7ccd0;
+
+/* border radius */
+$border-radius-1: 12px;
+
+/*=============================================
+=            BREAKPOINTS                      =
+=============================================*/
+
+$breakpoints: (
+  // Important
+  mobile: 320px,
+  mediumMobile: 376px,
+  largeMobile: 420px,
+  miniPortraitTablet: 510px,
+  portraitTablet: 641px,
+  // Important
+  tablet: 768px,
+  mediumTablet: 837px,
+  largeTablet: 879px,
+  extraLargeTablet: 991px,
+  // Important
+  smallDesktop: 1024px,
+  semiLargeDesktop: 1150px,
+  desktop: 1200px,
+  // Important
+  mediumDesktop: 1280px,
+  extraLargeDesktop: 1440px,
+  smallFourKDevice: 1680px,
+  mediumFourKDevice: 1920px,
+  fourKDevice: 2160px
+);
