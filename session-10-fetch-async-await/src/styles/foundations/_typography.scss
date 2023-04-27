@@ -1,0 +1,19 @@
+/*=============================================
+=            FOUNDATIONS - Typography        =
+=============================================*/
+
+/*=============================================
+=            Font Family                      =
+=============================================*/
+
+/* Body font */
+
+$body-font-family: var(--bbb-body-font-family, $fm-open-sans-bold) !default;
+
+/* Heading font family */
+
+$heading-font-family: var(--bbb-body-font-family, $fm-open-sans-bold) !default;
+
+/* Paragraph font family */
+
+$para-font-family: var(--bbb-body-font-family, $fm-open-sans-bold) !default;
